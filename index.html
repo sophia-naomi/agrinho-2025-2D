@@ -1,105 +1,185 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exemplo de Site</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilly Home: O Frescor da Natureza</title>
+    <!-- Inclui Tailwind CSS para estilos utilitários -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importa a fonte 'Inter' do Google Fonts para o corpo do texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Importa uma fonte para o título principal que simula caligrafia -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Define a fonte 'Inter' como padrão para o corpo do texto */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Define a fonte 'Dancing Script' para o título principal */
+        .font-dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-white min-h-screen flex flex-col items-center p-4">
 
-  <header>
-    <div class="logo-titulo">
-      <img src="img/logo.png" alt="Logo com uma flor a sima e au meio o nome escrito lily home escrito em bramco e emvolta verde" />
-      <h1>lily home</h1>
+    <!-- Container principal com sombra e cantos arredondados -->
+    <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl max-w-4xl w-full text-center border border-gray-100">
+
+        <!-- Seção da Logo e Nome da Empresa no Topo -->
+        <div class="flex flex-col items-center mb-8">
+            <img src="https://placehold.co/150x150/f0f0f0/333333?text=Logo+Lilly+Home"
+                 alt="Logo da Lilly Home"
+                 class="w-24 h-24 object-contain rounded-full mb-2 shadow-sm border border-gray-200"
+                 onerror="this.onerror=null;this.src='https://placehold.co/150x150/cccccc/333333?text=Imagem+Indisponível';">
+            <p class="text-3xl font-bold text-gray-900">Lilly Home</p>
+        </div>
+
+        <header class="mb-8">
+            <!-- O nome do aluno e o tema "Perfume" foram removidos conforme solicitado -->
+            <!-- O título principal foi alterado para "Lilly Home: O Frescor da Natureza" -->
+            <h2 class="text-6xl md:text-8xl font-dancing-script text-gray-800 leading-tight">Lilly Home: O Frescor da Natureza</h2>
+        </header>
+
+        <!-- Seção do slogan -->
+        <section class="mb-10 p-6 bg-gray-50 rounded-xl shadow-inner border border-gray-100 section-green-border">
+            <p class="text-xl md:text-2xl font-semibold text-gray-900 italic">
+                "Leve um pedacinho da <span class="text-black font-bold">REFRESCÂNCIA</span> do campo! Conheça o mais novo produto 'Lilly Garden'."
+            </p>
+        </section>
+
+        <!-- Seção de propaganda com mulher em campo de lírios -->
+        <section class="mb-10 p-6 bg-white rounded-xl shadow-md border border-gray-100 section-pink-border">
+            <h3 class="text-3xl font-bold text-black mb-4">Descubra a Essência da Natureza</h3>
+            <div class="flex justify-center items-center mb-6">
+                <img src="https://placehold.co/800x400/f0f0f0/333333?text=Mulher+em+Campo+de+Lírios"
+                     alt="Mulher em um campo de lírios"
+                     class="w-full h-auto object-cover rounded-xl shadow-lg border-2 border-gray-200"
+                     onerror="this.onerror=null;this.src='https://placehold.co/800x400/cccccc/333333?text=Imagem+Indisponível';">
+            </div>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Deixe-se envolver pela beleza e tranquilidade de um campo de lírios. Lilly Garden é mais que um perfume, é uma experiência sensorial que te conecta com a pureza da natureza.
+            </p>
+        </section>
+
+        <!-- Seção de descrição do produto com espaço para a fórmula e imagem flutuante -->
+        <section class="bg-white p-6 rounded-xl shadow-md border border-gray-100 section-green-border text-left">
+            <h3 class="text-3xl font-bold text-black mb-4 text-center">Descrição do Produto</h3>
+            <div class="flex flex-col md:flex-row items-start md:gap-8">
+                <div class="md:w-1/2 mb-4 md:mb-0">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Lily Garden - é uma fragrância encantadora que evoca a serenidade e a beleza de um jardim em plena floração. Ao abrir, notas frescas e verdes de folhas crocantes se misturam com um toque suave de citrinos, criando uma sensação revitalizante que lembra a brisa leve em um dia ensolarado.
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center">
+                    <img src="https://placehold.co/300x300/ffffff/000000?text=Frasco+Perfume"
+                         alt="Frasco de perfume Lilly Garden"
+                         class="w-48 h-48 md:w-64 md:h-64 object-contain rounded-full shadow-lg border-4 border-gray-200"
+                         onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Imagem+Indisponível';">
+                </div>
+            </div>
+            <div class="mt-4">
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    No coração da composição, as majestosas flores de lírio desabrocham em todo seu esplendor. A doçura delicada dos lírios é acompanhada por acordes florais adicionais, como jasmim e rosa, que trazem uma profundidade romântica e envolvente à fragrância. Essa combinação floral é como um passeio por um jardim exuberante, onde cada pétala exala uma elegância sutil.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    À medida que a fragrância evolui, notas de fundo de madeira suave, proporcionando um toque terroso e reconfortante que ancla a experiência. O resultado é uma assinatura olfativa que é ao mesmo tempo fresca e sofisticada, perfeita para quem busca um perfume que capture a essência da natureza e a beleza efêmera das flores.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Lily Garden - é mais do que apenas uma fragrância; é uma celebração da vida, da beleza e da fragilidade dos momentos passados em um jardim florido. Ideal para o dia a dia ou ocasiões especiais, essa essência convida você a se perder na magia do seu próprio refúgio floral.
+                </p>
+                <div class="formula-box p-4 bg-gray-50 rounded-lg border border-gray-200 text-left">
+                    <p class="font-semibold text-gray-800 mb-2">Fórmula do Produto:</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Lírios</li>
+                        <li>Jasmim</li>
+                        <li>Camomila</li>
+                        <li>Rosas</li>
+                        <li>Cedro</li>
+                        <li>Sândalo</li>
+                        <li>Oud</li>
+                        <li>Bétula</li>
+                        <li>Madeira de Guaiac</li>
+                        <li>Limão siciliano</li>
+                        <li>Óleo mineral USP 70</li>
+                        <li>Etanol (Graduação alcoólica de 80°GL)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Convite Especial de Aniversário da Empresa -->
+        <section class="mt-10 p-6 bg-white rounded-xl shadow-md border border-gray-100 section-pink-border text-left">
+            <h3 class="text-3xl font-bold text-black mb-4 text-center">Celebre Conosco: 15 Anos de Lily Home e o Lançamento de Lily Garden!</h3>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Em meio ao ritmo acelerado da cidade, a Lily Home se destaca como um refúgio de beleza e tranquilidade. Estamos radiantes em anunciar que completamos 15 anos dedicados ao cultivo dos mais belos lírios, trazendo a essência do campo para o coração urbano. Para celebrar essa jornada incrível, convidamos você a se juntar a nós em uma festa especial na nossa empresa, onde a natureza e a alegria se encontrarão.
+            </p>
+            <p class="text-lg font-semibold text-black mt-4 text-center">
+                Data: [○○○○] <br>
+                Horário: A partir das [○○○○] <br>
+                Local: [○○○○]
+            </p>
+            <p class="text-lg font-bold text-black mt-6 mb-4 text-center">O que esperar?</p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Lançamento do nosso mais novo produto: Lily Garden! Venha conhecer de perto essa fragrância inspirada na beleza dos nossos campos floridos. Uma verdadeira homenagem ao frescor e à elegância dos lírios que cultivamos com tanto carinho.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Passeio pelos Campos de Lírios: Desfrute de uma experiência única caminhando entre nossos lindos campos de lírios, onde a beleza natural se revela em cada flor. É um convite para respirar fundo e sentir a pureza do campo, mesmo estando próximo da agitação da cidade.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Atividades para toda a família: Música ao vivo, oficinas criativas, degustações e muito mais aguardam por você! Uma oportunidade perfeita para desconectar-se do cotidiano urbano e conectar-se com a natureza.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Este evento é uma forma de agradecermos a todos que fizeram parte dessa história. Vocês são essenciais para o nosso crescimento e sucesso, e queremos comemorar juntos cada momento especial.
+            </p>
+            <p class="text-lg font-semibold text-black mt-4 text-center">
+                Confirme sua presença até [○○○○] pelo telefone [○○○○] ou pelo e-mail [○○○○].
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mt-4 text-center">
+                Venha se encantar com o que preparamos para você! Junte-se a nós nesta celebração repleta de flores, sorrisos e memórias inesquecíveis. Afinal, é no encontro entre cidade e campo que encontramos a verdadeira essência da vida.
+            </p>
+            <p class="text-lg font-semibold text-black mt-6 text-center">Com carinho,</p>
+            <p class="text-lg font-semibold text-black text-center">A equipe da Lily Home</p>
+        </section>
+
+        <!-- Seção: Nossos Campos de Lírios (Muitas Imagens de Lírios) -->
+        <section class="mt-10 p-6 bg-gray-50 rounded-xl shadow-md border border-gray-100 section-green-border">
+            <h3 class="text-3xl font-bold text-black mb-6">Nossos Campos de Lírios</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lily-images-gallery">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Lírio+1" alt="Lírio branco" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Lírio+2" alt="Lírio rosa" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Lírio+3" alt="Lírio amarelo" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Lírio+4" alt="Lírio laranja" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Lírio+5" alt="Lírio roxo" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Lírio+6" alt="Lírio vermelho" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+            </div>
+        </section>
+
+        <!-- Seção: Apresentação da Empresa -->
+        <section class="mt-10 p-6 bg-gray-50 rounded-xl shadow-md border border-gray-100 section-pink-border">
+            <h3 class="text-3xl font-bold text-black mb-6">Apresentação da Empresa</h3>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                A Lilly Home é uma empresa dedicada a trazer a essência da natureza para o seu lar e para o seu dia a dia. Com 15 anos de experiência, somos especialistas em criar produtos que combinam qualidade, inovação e o frescor dos jardins mais encantadores.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Nossa missão é proporcionar bem-estar e beleza através de fragrâncias e itens inspirados na flora, cultivando um ambiente de harmonia e serenidade para nossos clientes.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6 company-presentation">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Produto+1" alt="Produto da empresa 1" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Produto+2" alt="Produto da empresa 2" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Produto+3" alt="Produto da empresa 3" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+                <img src="https://placehold.co/200x200/ffffff/000000?text=Produto+4" alt="Produto da empresa 4" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
+            </div>
+        </section>
+
     </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="titulo">
-    <h2>Bem-vindo ao nosso mundo!</h2>
-  </section>
-
-  <section class="banner-principal">
-    <img src="flor-esquerda.png" alt="Banner principal" />
-  </section>
-
-  <section class="conteudo invertido">
-    <div class="texto">
-      <h3>Seção 1</h3>
-      <p>Descrição da seção 1.</p>
-    </div>
-    <img src="https://via.placeholder.com/400x250" alt="Imagem seção 1" />
-  </section>
-
-  <section class="conteudo">
-    <img src="https://via.placeholder.com/400x250" alt="Imagem seção 2" />
-    <div class="texto">
-      <h3>Seção 2</h3>
-      <p>Descrição da seção 2.</p>
-    </div>
-  </section>
-
-  <section class="conteudo invertido">
-    <div class="texto">
-      <h3>Seção 3</h3>
-      <p>Descrição da seção 3.</p>
-    </div>
-    <img src="https://via.placeholder.com/400x250" alt="Imagem seção 3" />
-  </section>
-
-  <section class="galeria">
-    <h2>Galeria de Imagens</h2>
-    <div class="grid-galeria">
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 1" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 2" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 3" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 4" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 5" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 6" />
-    </div>
-  </section>
-
-  <section class="seis-imagens">
-    <h2>Destaques</h2>
-    <div class="grid-destaques">
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 1" />
-        <p>Título 1</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 2" />
-        <p>Título 2</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 3" />
-        <p>Título 3</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 4" />
-        <p>Título 4</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 5" />
-        <p>Título 5</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 6" />
-        <p>Título 6</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
-  </footer>
+    <!-- Rodapé simples -->
+    <footer class="mt-8 text-gray-600 text-sm">
+        &copy; 2025 Lilly Home. Todos os direitos reservados.
+    </footer>
 
 </body>
 </html>
