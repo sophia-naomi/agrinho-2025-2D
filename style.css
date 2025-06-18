@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background-color: #7fc58f;
+  background-color: #aae4b7;
   color: #131010;
   padding: 10px 20px;
   display: flex;
@@ -125,7 +125,7 @@ nav .menu {
 }
 
 footer {
-  background-color: #a1dfa1;
+  background-color: #b7ebb7;
   color: #fff;
   text-align: center;
   padding: 20px;
