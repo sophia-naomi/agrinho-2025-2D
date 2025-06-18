@@ -1,5 +1,5 @@
 :root{
-  --cor-de-fundo:#c7a4bd;
+  --cor-de-fundo:#f7bfe7;
   --cor-de-texto:#E195AB;
   --cor-texto-dois:#CCDF92;
 }
@@ -42,7 +42,7 @@ nav .menu {
   padding: 0;
 }
 
-.menu li a {
+.menau li  {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
