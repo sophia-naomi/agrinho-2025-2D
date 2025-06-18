@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background-color:#efffdb
+  background-color:#efffdb;
   color: #131010;
   padding: 10px 20px;
   display: flex;
