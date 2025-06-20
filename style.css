@@ -12,6 +12,20 @@ body {
   color: #333;
 }
 
+.fundo{
+ background-color: #c5e99c;
+}
+
+header {
+  background-color:#c5e99c;
+  color: #131010;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* Container principal do carrossel */
 .carousel-container {
     max-width: 800px;
@@ -106,20 +120,6 @@ body {
 }
 
 
-
-.fundo{
- background-color: #c5e99c;
-}
-
-header {
-  background-color:#c5e99c;
-  color: #131010;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
 .logo-titulo {
   display: flex;
