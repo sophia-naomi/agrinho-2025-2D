@@ -1,228 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilly Home: O Frescor da Natureza</title>
-    <!-- Inclui Tailwind CSS para estilos utilitários -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Importa a fonte 'Inter' do Google Fonts para o corpo do texto -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Importa uma fonte para o título principal que simula caligrafia -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Link para o arquivo CSS personalizado -->
     <link rel="stylesheet" href="style.css">
     <style>
         /* Define a fonte 'Inter' como padrão para o corpo do texto */
         body {
             font-family: 'Inter', sans-serif;
         }
+
         /* Define a fonte 'Dancing Script' para o título principal */
         .font-dancing-script {
             font-family: 'Dancing Script', cursive;
         }
     </style>
 </head>
-<body class="bg min-h-screen flex flex-col items-center p-4">
 
-    <!-- Container principal com sombra e cantos arredondados -->
-    <div class="bg p-8 md:p-12 rounded-2xl shadow-xl max-w-4xl w-full text-center border border-gray-100 fundo">
+<body>
 
-        <!-- Seção da Logo e Nome da Empresa no Topo -->
-        <div class="flex flex-col items-center mb-8">
-            <img src="img/logo.png"
-                 alt="Logo de imagem verde com fiores escrito lily home"
-                 class="w-24 h-24 object-contain rounded-full mb-2 shadow-sm border border-gray-200"
-                 onerror="this.onerror=null;this.src='https://placehold.co/150x150/cccccc/333333?text=Imagem+Indisponível';">
-            <p class="text-3xl font-bold text-gray-900">Lilly Home</p>
+    <header class="w-full bg-white shadow-lg py-4 px-6 fixed top-0 z-50 rounded-b-xl">
+        <div class="container mx-auto flex flex-wrap justify-between items-center header-content">
+            <div class="nav-list-wrapper p-4 rounded-xl shadow-inner">
+                <ul class="flex flex-row gap-4 justify-center">
+                    <li>
+                        <div class="nav-item-box"><a href="index.html">Home</a></div>
+                    </li>
+                    <li>
+                        <div class="nav-item-box"><a href="#lançamentos">Lançamentos</a></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="logo-container flex-shrink-0">
+                <img src="img/logo.png" alt="Seu Logo Aqui" class="logo-img shadow-md">
+            </div>
+
+            <div class="nav-list-wrapper p-3 rounded-xl shadow-inner lista-dois">
+                <ul class="flex flex-row gap-3 justify-center">
+                    <li>
+                        <div class="nav-item-box"><a href="#campos">Campos</a></div>
+                    </li>
+                    <li>
+                        <div class="nav-item-box"><a href="#apresentação">Apresentação</a></div>
+                    </li>
+                </ul>
+
+                <div class="relative mt-4 md:mt-0 md:ml-8 w-full md:w-auto">
+                    <input type="text" placeholder="pesquisar produtos"
+                        class="pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500 w-full md:w-64">
+                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        width="20" height="20">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <header class="mb-8">
-            <!-- O nome do aluno e o tema "Perfume" foram removidos conforme solicitado -->
-            <!-- O título principal foi alterado para "Lilly Home: O Frescor da Natureza" -->
-            <h2 class="text-6xl md:text-8xl font-dancing-script text-gray-800 leading-tight">Lilly Home: O Frescor da Natureza</h2>
-        </header>
+    <main class="pt-24 pb-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <section class="mb-10">
+            <div class="bg p-8 md:p-12 rounded-2xl shadow-xl w-full text-center border border-gray-100">
+                <h2 class="titulo text-6xl md:text-8xl font-dancing-script text-gray-800 leading-tight">Lilly Home: O
+                    Frescor da Natureza</h2>
+            </div>
+        </section>
 
-        <!-- Seção do slogan -->
         <section class="mb-10 p-6 bg-gray-50 rounded-xl shadow-inner border border-gray-100 section-green-border">
             <p class="text-xl md:text-2xl font-semibold text-gray-900 italic">
-                "Leve um pedacinho da <span class="text-black font-bold">REFRESCÂNCIA</span> do campo! Conheça o mais novo produto 'Lilly Garden'."
+                "Leve um pedacinho da <span class="text-black font-bold">REFRESCÂNCIA</span> do campo! Conheça o
+                mais novo produto 'Lilly Garden'."
             </p>
         </section>
-<div class="carousel-container">
-        <div class="carousel-slide fade">
-            <img src="img/pro2.png" alt="Imagem 1">
-            <div class="carousel-caption">Legenda da Imagem 1</div>
-        </div>
 
-        <div class="carousel-slide fade">
-            <video controls muted>
-                <source src="img/prop.mp4" type="video/mp4">
-                Seu navegador não suporta a tag de vídeo.
-            </video>
-            <div class="carousel-caption">Vídeo de Exemplo</div>
-        </div>
+        <section class="mb-10">
+            <div class="carousel-container relative mx-auto overflow-hidden rounded-lg shadow-lg">
+                <div class="carousel-slide fade">
+                    <img src="img/pro2.png" alt="Imagem 1">
+                    <div class="carousel-caption">O frescor da natureza!</div>
+                </div>
 
-        <div class="carousel-slide fade">
-            <img src="img/pro3.png" alt="Imagem 2">
-            <div class="carousel-caption">Legenda da Imagem 2</div>
-        </div>
+                <div class="carousel-slide fade">
+                    <video controls muted>
+                        <source src="img/prop.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                    <div class="carousel-caption">Lily Garden</div>
+                </div>
 
-    <div class="carousel-container">
-        <div class="carousel-slide fade">
-            <img src="img/propa.png" alt="Imagem 3">
-            <div class="carousel-caption">Legenda da Imagem 1</div>
-        </div>
-    <div class="carousel-container">
-        <div class="carousel-slide fade">
-            <img src="img/pro4.png" alt="Imagem 4">
-            <div class="carousel-caption">Legenda da Imagem 1</div>
-        </div>
+                <div class="carousel-slide fade">
+                    <img src="img/pro3.png" alt="Imagem 2">
+                    <div class="carousel-caption">Leve e doce</div>
+                </div>
 
-        <div class="carousel-container">
-        <div class="carousel-slide fade">
-            <img src="img/pro5.png" alt="Imagem 5">
-            <div class="carousel-caption">Legenda da Imagem 1</div>
-        </div>
+                <div class="carousel-slide fade">
+                    <img src="img/propa.png" alt="Imagem 3">
+                    <div class="carousel-caption">Leve um pedacinho da REFRESCÂNCIA do campo!</div>
+                </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
+                <div class="carousel-slide fade">
+                    <img src="img/pro4.png" alt="Imagem 4">
+                    <div class="carousel-caption">Conheça o mais novo produto "Lilly Garden"</div>
+                </div>
 
-    <div style="text-align:center; margin-top: 20px;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        
-    </div>
+                <div class="carousel-slide fade">
+                    <img src="img/pro5.png" alt="Imagem 5">
+                    <div class="carousel-caption">promoção de todos os produtos!</div>
+                </div>
 
+                <div style="text-align:center; margin-top: 20px;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </section>
 
-
-
-        <!-- Seção de descrição do produto com espaço para a fórmula e imagem flutuante -->
         <section class="bg-white p-6 rounded-xl shadow-md border border-gray-100 section-green-border text-left campo">
             <h3 class="text-3xl font-bold text-black mb-4 text-center">Descrição do Produto</h3>
             <div class="flex flex-col md:flex-row items-start md:gap-8">
                 <div class="md:w-1/2 mb-4 md:mb-0">
                     <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                        Lily Garden - é uma fragrância encantadora que evoca a serenidade e a beleza de um jardim em plena floração. Ao abrir, notas frescas e verdes de folhas crocantes se misturam com um toque suave de citrinos, criando uma sensação revitalizante que lembra a brisa leve em um dia ensolarado.
+                        Lily Garden - é uma fragrância encantadora que evoca a serenidade e a beleza de
+                        um jardim em plena floração. Ao abrir, notas frescas e verdes de folhas
+                        crocantes se misturam com um toque suave de citrinos, criando uma sensação
+                        revitalizante que lembra a brisa leve em um dia ensolarado.
                     </p>
                 </div>
                 <div class="md:w-1/2 flex justify-center items-center">
                     <img src="img/perf.png"
-                         alt="imagem de um Frasco de perfume com o nome Lilly Garden com lirio"
-                         class="w-48 h-48 md:w-64 md:h-64 object-contain rounded-full shadow-lg border-4 border-gray-200"
-                         onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Imagem+Indisponível';">
+                        alt="imagem de um Frasco de perfume com o nome Lilly Garden com lirio"
+                        class="w-48 h-48 md:w-64 md:h-64 object-contain rounded-full shadow-lg border-4 border-gray-200"
+                        onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Imagem+Indisponível';">
                 </div>
             </div>
             <div class="mt-4">
                 <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                    No coração da composição, as majestosas flores de lírio desabrocham em todo seu esplendor. A doçura delicada dos lírios é acompanhada por acordes florais adicionais, como jasmim e rosa, que trazem uma profundidade romântica e envolvente à fragrância. Essa combinação floral é como um passeio por um jardim exuberante, onde cada pétala exala uma elegância sutil.
+                    No coração da composição, as majestosas flores de lírio desabrocham em todo seu
+                    esplendor. A doçura delicada dos lírios é acompanhada por acordes florais
+                    adicionais, como jasmim e rosa, que trazem uma profundidade romântica e envolvente à
+                    fragrância. Essa combinação floral é como um passeio por um jardim exuberante, onde
+                    cada pétala exala uma elegância sutil.
                 </p>
-                <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                    À medida que a fragrância evolui, notas de fundo de madeira suave, proporcionando um toque terroso e reconfortante que ancla a experiência. O resultado é uma assinatura olfativa que é ao mesmo tempo fresca e sofisticada, perfeita para quem busca um perfume que capture a essência da natureza e a beleza efêmera das flores.
-                </p>
-                <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                    Lily Garden - é mais do que apenas uma fragrância; é uma celebração da vida, da beleza e da fragilidade dos momentos passados em um jardim florido. Ideal para o dia a dia ou ocasiões especiais, essa essência convida você a se perder na magia do seu próprio refúgio floral.
-                </p>
-                <div class="formula-box p-4 bg-gray-50 rounded-lg border border-gray-200 text-left">
-                    <p class="font-semibold text-gray-800 mb-2">Fórmula do Produto:</p>
-                    <ul class="list-disc list-inside text-gray-700">
-                        <li>Lírios</li>
-                        <li>Jasmim</li>
-                        <li>Camomila</li>
-                        <li>Rosas</li>
-                        <li>Cedro</li>
-                        <li>Sândalo</li>
-                        <li>Oud</li>
-                        <li>Bétula</li>
-                        <li>Madeira de Guaiac</li>
-                        <li>Limão siciliano</li>
-                        <li>Óleo mineral USP 70</li>
-                        <li>Etanol (Graduação alcoólica de 80°GL)</li>
-                    </ul>
-                </div>
+
+                <div class="container">
+        <!-- Título principal da seção -->
+        <h1 class="titulo ingredientes">Fórmula Exclusiva</h1>
+        <!-- Descrição convidativa do produto -->
+        <p class="description">Descubra os ingredientes cuidadosamente selecionados que compõem a essência única do nosso produto, combinando a pureza da natureza com a ciência para resultados inigualáveis.</p>
+
+
+        <!-- Lista de ingredientes -->
+        <ul class="ingredients-list">
+            <li>Lírios</li>
+            <li>Jasmim</li>
+            <li>Camomila</li>
+            <li>Rosas</li>
+            <li>Cedro</li>
+            <li>Sândalo</li>
+            <li>Oud</li>
+            <li>Bétula</li>
+            <li>Madeira de Guaiac</li>
+            <li>Limão Siciliano</li>
+            <li>Óleo Mineral USP 70</li>
+            <li>Etanol (Graduação Alcoólica de 80°GL)</li>
+        </ul>
+
             </div>
         </section>
 
-        <!-- Seção: Convite Especial de Aniversário da Empresa -->
-        <section class="mt-10 p-6 bg-white rounded-xl shadow-md border border-gray-100 section-pink-border text-left">
-            <h3 class="text-3xl font-bold text-black mb-4 text-center">Celebre Conosco: 15 Anos de Lily Home e o Lançamento de Lily Garden!</h3>
+        <section id="lançamentos"
+            class="mt-10 p-6 bg-white rounded-xl shadow-md border border-gray-100 section-pink-border text-left">
+            <h3 class="text-3xl font-bold text-black mb-4 text-center">Celebre Conosco: 15 Anos de Lily
+                Home e o Lançamento de Lily Garden!</h3>
             <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                Em meio ao ritmo acelerado da cidade, a Lily Home se destaca como um refúgio de beleza e tranquilidade. Estamos radiantes em anunciar que completamos 15 anos dedicados ao cultivo dos mais belos lírios, trazendo a essência do campo para o coração urbano. Para celebrar essa jornada incrível, convidamos você a se juntar a nós em uma festa especial na nossa empresa, onde a natureza e a alegria se encontrarão.
-            </p>
-            <p class="text-lg font-semibold text-black mt-4 text-center">
-                Data: [○○○○] <br>
-                Horário: A partir das [○○○○] <br>
-                Local: [○○○○]
-            </p>
-            <p class="text-lg font-bold text-black mt-6 mb-4 text-center">O que esperar?</p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                Lançamento do nosso mais novo produto: Lily Garden! Venha conhecer de perto essa fragrância inspirada na beleza dos nossos campos floridos. Uma verdadeira homenagem ao frescor e à elegância dos lírios que cultivamos com tanto carinho.
+                Em meio ao ritmo acelerado da cidade, a Lily Home se destaca como um refúgio de beleza e
+                tranquilidade. Estamos radiantes em anunciar que completamos 15 anos dedicados ao
+                cultivo dos mais belos lírios, trazendo a essência do campo para o coração urbano. Para
+                celebrar essa jornada incrível, convidamos você a se juntar a nós em uma festa especial
+                na nossa empresa, onde a natureza e a alegria se encontrarão.
             </p>
             <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                Passeio pelos Campos de Lírios: Desfrute de uma experiência única caminhando entre nossos lindos campos de lírios, onde a beleza natural se revela em cada flor. É um convite para respirar fundo e sentir a pureza do campo, mesmo estando próximo da agitação da cidade.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                Atividades para toda a família: Música ao vivo, oficinas criativas, degustações e muito mais aguardam por você! Uma oportunidade perfeita para desconectar-se do cotidiano urbano e conectar-se com a natureza.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                Este evento é uma forma de agradecermos a todos que fizeram parte dessa história. Vocês são essenciais para o nosso crescimento e sucesso, e queremos comemorar juntos cada momento especial.
-            </p>
-            <p class="text-lg font-semibold text-black mt-4 text-center">
-                Confirme sua presença até [○○○○] pelo telefone [○○○○] ou pelo e-mail [○○○○].
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mt-4 text-center">
-                Venha se encantar com o que preparamos para você! Junte-se a nós nesta celebração repleta de flores, sorrisos e memórias inesquecíveis. Afinal, é no encontro entre cidade e campo que encontramos a verdadeira essência da vida.
+                Atividades para toda a família: Música ao vivo, oficinas criativas, degustações e muito
+                mais aguardam por você!
             </p>
             <p class="text-lg font-semibold text-black mt-6 text-center">Com carinho,</p>
             <p class="text-lg font-semibold text-black text-center">A equipe da Lily Home</p>
         </section>
 
-        <!-- Seção: Nossos Campos de Lírios (Muitas Imagens de Lírios) -->
-        <section class="mt-10 p-6 bg-gray-50 rounded-xl shadow-md border border-gray-100 section-green-border">
+        <section id="campos"
+            class="mt-10 p-6 bg-gray-50 rounded-xl shadow-md border border-gray-100 section-green-border">
             <h3 class="text-3xl font-bold text-black mb-6">Nossos Campos de Lírios</h3>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lily-images-gallery ">
-                <img src="img/asi.png" alt="Lírio rosa" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/orie.png" alt="Lírio branco" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/roxo.png" alt="Lírio roxo" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/vale.png" alt="Lírio branco pequeno" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/tigra.png" alt="Lírio laranga" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/jose.png" alt="Lírio branco com folheas" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/azul.png" alt="lirio azul" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200"
-                <img src="img/verm.png" alt="lirio vermelho" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                </div
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lily-images-gallery">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/asi.png" alt="Lírio rosa">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/orie.png" alt="Lírio branco">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/roxo.png" alt="Lírio roxo">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/vale.png" alt="Lírio branco pequeno">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/tigra.png" alt="Lírio laranja">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/jose.png" alt="Lírio branco com folhas">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/azul.png" alt="Lírio azul">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/verm.png" alt="Lírio vermelho">
+            </div>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Passeio pelos Campos de Lírios: Desfrute de uma experiência única caminhando entre
+                nossos lindos campos de lírios, onde a beleza natural se revela em cada flor. É um
+                convite para respirar fundo e sentir a pureza do campo, mesmo estando próximo da
+                agitação da cidade.
+            </p>
         </section>
 
-        <!-- Seção: Apresentação da Empresa -->
-        <section class="mt-10 p-6 bg-gray-50 rounded-xl shadow-md border border-gray-100 section-pink-border">
+        <section id="apresentação"
+            class="mt-10 p-6 bg-gray-50 rounded-xl shadow-md border border-gray-100 section-pink-border">
             <h3 class="text-3xl font-bold text-black mb-6">Apresentação da Empresa</h3>
             <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                A Lilly Home é uma empresa dedicada a trazer a essência da natureza para o seu lar e para o seu dia a dia. Com 15 anos de experiência, somos especialistas em criar produtos que combinam qualidade, inovação e o frescor dos jardins mais encantadores.
+                A Lilly Home é uma empresa dedicada a trazer a essência da natureza para o seu lar e
+                para o seu dia a dia. Com 15 anos de experiência, somos especialistas em criar
+                produtos que combinam qualidade, inovação e o frescor dos jardins mais encantadores.
             </p>
             <p class="text-lg text-gray-700 leading-relaxed">
-                Nossa missão é proporcionar bem-estar e beleza através de fragrâncias e itens inspirados na flora, cultivando um ambiente de harmonia e serenidade para nossos clientes.
+                Nossa missão é proporcionar bem-estar e beleza através de fragrâncias e itens
+                inspirados na flora, cultivando um ambiente de harmonia e serenidade para nossos
+                clientes.
             </p>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6 company-presentation">
-                <img src="img/perf2.png" alt="Produto da empresa 2 azul" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/perf3.png" alt="Produto da empresa 3 bege" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/perd1.png" alt="Produto da empresa 4 rosa" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/perf5.png" alt="Produto da empresa 5" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-                <img src="img/perf4.png" alt="Produto da empresa 6" class="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200">
-    </footer>
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/perf2.png" alt="Produto da empresa 2 azul">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/perf3.png" alt="Produto da empresa 3 bege">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/prod1.png" alt="Produto da empresa 4 rosa">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/perf5.png" alt="Produto da empresa 5">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/perf4.png" alt="Produto da empresa 6">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/prod3.png" alt="Produto da empresa 7">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/prod2.png" alt="Produto da empresa 8">
+                <img class="galeria-item w-full h-auto object-cover rounded-lg shadow-sm border border-gray-200" src="img/prod4.png" alt="Produto da empresa 8">
             </div>
         </section>
+    </main>
 
-  
-
-    <!-- Rodapé simples -->
-    <footer class="mt-8 text-gray-600 text-sm">
+    <footer class="mt-8 text-gray-600 text-sm text-center pb-4">
         &copy; 2025 Lilly Home. Todos os direitos reservados.
     </footer>
 
     <script src="carrosel.js"></script>
 </body>
+
 </html>
