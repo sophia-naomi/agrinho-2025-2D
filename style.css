@@ -130,3 +130,97 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+/* Container principal do carrossel */
+.carousel-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Garante que o conteúdo que extrapola o container seja escondido */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Esconde os slides por padrão */
+.carousel-slide {
+    display: none;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-slide img,
+.carousel-slide video {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove espaços extras abaixo da imagem/vídeo */
+}
+
+/* Legenda do carrossel */
+.carousel-caption {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Botões de navegação (anterior e próximo) */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; /* Evita que o texto seja selecionado */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Posição do botão "próximo" */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* No hover, adicionar uma cor de fundo mais escura */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Indicadores de slide (pontos) */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Estilo do indicador ativo */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Animação de fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
