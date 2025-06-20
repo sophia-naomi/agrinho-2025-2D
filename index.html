@@ -29,55 +29,33 @@
     <div class="bg p-8 md:p-12 rounded-2xl shadow-xl max-w-4xl w-full text-center border border-gray-100 fundo">
 
         <!-- Seção da Logo e Nome da Empresa no Topo -->
-        <div class="flex flex-col items-center mb-8">
-            <img src="img/logo.png"
-                 alt="Logo de imagem verde com fiores escrito lily home"
-                 class="w-24 h-24 object-contain rounded-full mb-2 shadow-sm border border-gray-200"
-                 onerror="this.onerror=null;this.src='https://placehold.co/150x150/cccccc/333333?text=Imagem+Indisponível';">
-            <p class="text-3xl font-bold text-gray-900">Lilly Home</p>
-        </div>
-
-        <header class="mb-8">
-            <!-- O nome do aluno e o tema "Perfume" foram removidos conforme solicitado -->
-            <!-- O título principal foi alterado para "Lilly Home: O Frescor da Natureza" -->
-            <h2 class="text-6xl md:text-8xl font-dancing-script text-gray-800 leading-tight">Lilly Home: O Frescor da Natureza</h2>
-        </header>
-
-        <!-- Seção do slogan -->
-        <section class="mb-10 p-6 bg-gray-50 rounded-xl shadow-inner border border-gray-100 section-green-border">
-            <p class="text-xl md:text-2xl font-semibold text-gray-900 italic">
-                "Leve um pedacinho da <span class="text-black font-bold">REFRESCÂNCIA</span> do campo! Conheça o mais novo produto 'Lilly Garden'."
-            </p>
-        </section>
-
-        <!-- Seção de propaganda com mulher em campo de lírios -->
-        <div class="carousel-container">
+       <div class="carousel-container">
         <div class="carousel-slide fade">
-            <img src="img/propa.png" alt="Imagem1 de uma propagamda com o nome lily garden escrito no meio">
+            <img src="img/propa.png" alt="Imagem 1">
             <div class="carousel-caption">Legenda da Imagem 1</div>
         </div>
 
         <div class="carousel-slide fade">
             <video controls muted>
-                <source src="img/prop.mp4" type="video/mp4 uma propagamda em video com varias mulheres representando no video a lily home">
+                <source src="img/prop.mp4" type="video/mp4">
                 Seu navegador não suporta a tag de vídeo.
             </video>
             <div class="carousel-caption">Vídeo de Exemplo</div>
         </div>
 
         <div class="carousel-slide fade">
-            <img src="img/pro2.png" alt="Imagem 2 uma propagamda de uma mulher em meio de um campo de lirios brancos">
+            <img src="img/pro2.png" alt="Imagem 2">
             <div class="carousel-caption">Legenda da Imagem 2</div>
         </div>
 
     <div class="carousel-container">
         <div class="carousel-slide fade">
-            <img src="img/pro3.png" alt="Imagem 3 um frasco de perfume com algumas imagem de lirios">
+            <img src="img/pro3.png" alt="Imagem 1">
             <div class="carousel-caption">Legenda da Imagem 1</div>
         </div>
     <div class="carousel-container">
         <div class="carousel-slide fade">
-            <img src="img/pro4.png" alt="Imagem 4 uma imagem de uma mulher textando um perfume">
+            <img src="img/pro4.png" alt="Imagem 1">
             <div class="carousel-caption">Legenda da Imagem 1</div>
         </div>
 
@@ -86,23 +64,14 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
+    <div style="text-align:center; margin-top: 20px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
 
-        <!-- Seção de descrição do produto com espaço para a fórmula e imagem flutuante -->
-        <section class="bg-white p-6 rounded-xl shadow-md border border-gray-100 section-green-border text-left campo">
-            <h3 class="text-3xl font-bold text-black mb-4 text-center">Descrição do Produto</h3>
-            <div class="flex flex-col md:flex-row items-start md:gap-8">
-                <div class="md:w-1/2 mb-4 md:mb-0">
-                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                        Lily Garden - é uma fragrância encantadora que evoca a serenidade e a beleza de um jardim em plena floração. Ao abrir, notas frescas e verdes de folhas crocantes se misturam com um toque suave de citrinos, criando uma sensação revitalizante que lembra a brisa leve em um dia ensolarado.
-                    </p>
-                </div>
-                <div class="md:w-1/2 flex justify-center items-center">
-                    <img src="img/perf.png"
-                         alt="imagem de um Frasco de perfume com o nome Lilly Garden com lirio"
-                         class="w-48 h-48 md:w-64 md:h-64 object-contain rounded-full shadow-lg border-4 border-gray-200"
-                         onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Imagem+Indisponível';">
-                </div>
-            </div>
+
             <div class="mt-4">
                 <p class="text-lg text-gray-700 leading-relaxed mb-4">
                     No coração da composição, as majestosas flores de lírio desabrocham em todo seu esplendor. A doçura delicada dos lírios é acompanhada por acordes florais adicionais, como jasmim e rosa, que trazem uma profundidade romântica e envolvente à fragrância. Essa combinação floral é como um passeio por um jardim exuberante, onde cada pétala exala uma elegância sutil.
@@ -206,5 +175,6 @@
         &copy; 2025 Lilly Home. Todos os direitos reservados.
     </footer>
 
+    <script src="carrosel.js"></script>
 </body>
 </html>
